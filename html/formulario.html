@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../css/formulario.css" />
+  </head>
+  <body>
+    <div class="contenedor_principal">
+      <!--------------------------------------------->
+      <!-- 1) TÍTULO -->
+      <!--------------------------------------------->
+      <h1 class="titulo_form">Registro de usuario</h1>
+
+      <!--------------------------------------------->
+      <!-- 2) Formulario -->
+      <!--------------------------------------------->
+      <form class="formulario" action="#" method="post">
+        <div class="input-group">
+          <img src="../assets/usuario_img.png" class="icono" alt="" />
+
+          <input type="text" id="nombre" placeholder="nombre de usuario" />
+        </div>
+
+        <div class="input-group">
+          <img src="../assets/key_icon.png" class="icono" alt="" />
+          <input type="password" id="password" placeholder="contraseña" />
+        </div>
+
+        <div class="input-group">
+          <img src="../assets/key_icon.png" class="icono" alt="" />
+          <input
+            type="password"
+            id="confirmar"
+            placeholder="confirmar contraseña"
+          />
+        </div>
+        <!--------------------------------------------->
+        <!-- 3) botón -->
+        <!--------------------------------------------->
+        <button type="submit">Crear cuenta</button>
+      </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/formulario.js"></script>
+  </body>
+</html>
