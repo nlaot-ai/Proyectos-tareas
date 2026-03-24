@@ -5,12 +5,10 @@ document.addEventListener("DOMContentLoaded", function () {
   formulario.addEventListener("submit", function (e) {
     e.preventDefault(); 
 
-
     const nombre = document.getElementById("nombre").value.trim();
     const password = document.getElementById("password").value.trim();
     const confirmar = document.getElementById("confirmar").value.trim();
 
- 
     if (nombre === "" || password === "" || confirmar === "") {
       Swal.fire({
         icon: "error",
@@ -19,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
       });
       return;
     }
-
 
     if (password !== confirmar) {
       Swal.fire({
@@ -30,13 +27,11 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-
     Swal.fire({
       icon: "success",
       title: "Cuenta creada",
       text: "El usuario se registró correctamente",
     });
-
 
     formulario.reset();
   });
