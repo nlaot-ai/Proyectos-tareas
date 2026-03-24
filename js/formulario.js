@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
       Swal.fire({
         icon: "error",
         title: "Error",
-        text: "Por favior, completa todos los campos",
+        text: "Información incompleta, debe completar todos los campos solicitados.",
       });
       return;
     }
